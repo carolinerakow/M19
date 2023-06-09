@@ -1,0 +1,139 @@
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 992 px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 1rem;
+       }
+     
+    h1{
+      font-size 40px;
+    }
+    .products-header {
+      font-size: 40px;
+    }
+    nav ul{
+      flex-flow:row;
+    }
+    nav li{
+      margin: 0 1rem 1rem 1rem;
+      font-size: 1.3rem;
+    }
+    nav .logo{
+    grid-column: 1/2;
+      flex-basis: 100%
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    nav .nav-bar-items > a > span {
+      padding: 15px;
+    }
+    nav a:hover{
+      color: #d98555;
+    }
+    nav > a > span {
+      align-items: center;
+    }
+    .main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      background-color: white;
+      align-items: flex-start;
+    }
+  
+    article {
+      flex-basis: 30%;
+    }
+  
+    .article-adjust {
+      flex-basis: 50%;
+    }
+  
+    .article-adjust > p {
+      font-size: 18px;
+    }
+    figure {
+      margin: 1.5rem 0 0 0;
+      flex-basis: 30%;
+      background-color: white; 
+      border-radius: 10px;
+    }
+  
+    .about-img-default {
+      display: none;
+    }
+  
+    .about-img-desktop {
+      display: block;
+    }
+  
+    .figure-adjust {
+      flex-basis: 45%;
+      align-content: flex-end;
+      margin: 7rem 0 0 0;
+    }
+    .contact-article {
+      padding-top: 7rem;
+    }
+  
+    .contact-article > h1 {
+      font-size: 40px;
+    }
+  
+    .contact-article > p {
+      font-size: 20px;
+    }
+  
+    .contact-figure {
+      flex-basis: 50%;
+      padding-top: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+
+    h1 {
+      font-size: 40px;
+    }
+  
+    .products-header {
+      font-size: 40px;
+    }
+  
+    h2 {
+      font-size: 25px;
+    }
+  
+    nav > ul {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    article {
+      flex-basis: 100%;
+    }
+  
+    figure {
+      flex-basis: 100%;
+    }
+    /* adjusting contact html images*/
+    .about-img-default {
+      display: none;
+    }
+  
+    .about-img-mobile {
+      display: flex;
+    }
+  }
